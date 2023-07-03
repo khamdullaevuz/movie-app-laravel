@@ -15,4 +15,9 @@ class Movie extends Model
         'favourite',
         'like'
     ];
+
+    protected $casts = [
+        'favourite' => 'boolean',
+        'like' => 'boolean'
+    ];
 }
